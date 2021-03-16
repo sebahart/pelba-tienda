@@ -1,3 +1,15 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+  @apply bg-primary py-1 px-4 text-white uppercase font-light;
+}

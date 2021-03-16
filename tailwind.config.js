@@ -9,6 +9,8 @@ module.exports = {
   theme: {
     extend: {
       container: {
+        center: true,
+        padding: '1rem',
         screens: {
           sm: '100%',
           md: '100%',
@@ -18,7 +20,7 @@ module.exports = {
       },
     },
     colors: {
-      primary: '#00adef',
+      primary: '#625788',
       transparent: 'transparent',
       current: 'currentColor',
       black: defaultTheme.colors.black,

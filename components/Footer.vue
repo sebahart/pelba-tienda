@@ -1,106 +1,207 @@
 <template>
-  <footer class="w-full py-10 px-16">
-    <div class="container mx-auto">
-      <div class="">
-        <div id="form" class="hidden">
-          <h5 class="title">Recibí nuestras Ofertas y Promociones</h5>
-          <form class="text-center" method="post">
-            <div class="sib_signup_box_inside_1">
-              <label>Dirección de mail*</label>
-              <input name="email" required="required" type="email" />
-              <label>Nombre</label>
-              <input class="sib-NAME-area" name="NAME" type="text" />
-              <button
-                class="btn-home btn-green btn-footer btn-hover-purple mt-5"
-                type="submit"
-              >
-                Subscribirse
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div>
-          <div id="footer-info container mx-auto">
-            <div class="font-gray grid sm:grid-cols-2 md:grid-cols-4 sm:gap-4">
-              <div>
-                <p class="text-white font-bold">Info:</p>
-                <p>
-                  <strong
-                    ><a href="mailto:info@pelba.com.ar">info@pelba.com.ar</a
-                    ><br /> </strong
-                  ><strong
-                    ><br />
-                    Whatsapp:&nbsp; </strong
-                  >+5491137891905<br />
-                  <strong>Teléfono:&nbsp; </strong>
-                  <span>011 4103-5500</span>
-                </p>
-              </div>
-              <div>
-                <p class="font-bold text-white">Centro de Distribución:</p>
-                <p>
-                  Buenos Aires 2590,<br />
-                  Boulogne, Buenos Aires.<br />
-                  <a
-                    href="https://www.google.com/maps/place/PELBA+(Centro+de+Distribuci%C3%B3n)/@-34.4937473,-58.5949739,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbadc6e34573b:0xfba0a65cfd3db1b1!8m2!3d-34.4937473!4d-58.5927852"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    ><strong>ver mapa</strong>
-                  </a>
-                </p>
-                <p>&nbsp;</p>
-              </div>
-
-              <div>
-                <p class="text-white font-bold">Sucursales:</p>
-                <p>
-                  <strong>Don Torcuato:&nbsp;</strong>&nbsp;Av. Alvear 3399
-                  (R202)<br />
-                  Don Torcuato, Buenos Aires.<br />
-                  <strong>
-                    <a
-                      class="font-white"
-                      href="https://www.google.com/maps/place/Pelba+(Sucursal+Don+Torcuato)/@-34.4835895,-58.6111108,15z/data=!4m5!3m4!1s0x0:0x5404a2d1f7b4ac47!8m2!3d-34.4835895!4d-58.6111108"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      ver mapa
-                    </a>
-                  </strong>
-                </p>
-                <p>
-                  <strong>Pilar:</strong>&nbsp; Panamericana km 55<br />
-                  Pilar, Buenos Aires.<br />
-                  <strong>
-                    <a
-                      href="https://www.google.com/maps/place/PELBA+(Sucursal+Pilar)/@-34.451315,-58.9255837,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9ce3800e059b:0x4c2ece2e8140c105!8m2!3d-34.451315!4d-58.923395"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >ver mapa</a
-                    ><br />
-                  </strong>
-                </p>
-              </div>
-              <div>
-                <p class="text-white fond-bold">Oficina Comercial Mendoza:</p>
-                <p>
-                  Bufano 489,&nbsp;Luján de cuyo, Mendoza.<br />
-                  <a
-                    href="https://goo.gl/maps/JERfML54SPmu6LBK9"
-                    rel="noopener noreferrer"
-                    target="_blank"
+  <footer class="w-full pt-10">
+    <div class="container mx-auto px-2">
+      <div>
+        <div id="footer-info container mx-auto">
+          <div class="font-gray grid sm:grid-cols-2 md:grid-cols-4 sm:gap-4">
+            <div class="mb-2 sm:mb-0">
+              <p class="text-white font-semibold text-sm mb-2">Info:</p>
+              <p class="text-sm font-light">
+                <a
+                  href="mailto:info@pelba.com.ar"
+                  class="flex items-center mb-1"
+                >
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <strong>ver mapa</strong>
-                  </a>
-                </p>
-              </div>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                  info@pelba.com.ar
+                </a>
+                <a
+                  href="https://wa.me/5491137891905?text=hola"
+                  class="flex items-center mb-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 mr-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      style="fill: #999"
+                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                    />
+                  </svg>
+                  +5491137891905
+                </a>
+                <a href="tel:01141035500" class="flex items-center mb-1">
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    ></path>
+                  </svg>
+                  011 4103-5500
+                </a>
+                <br />
+              </p>
+            </div>
+            <div class="mb-4 sm:mb-0">
+              <p class="font-semibold text-sm text-white mb-2">
+                Centro de Distribución:
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/PELBA+(Centro+de+Distribuci%C3%B3n)/@-34.4937473,-58.5949739,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbadc6e34573b:0xfba0a65cfd3db1b1!8m2!3d-34.4937473!4d-58.5927852"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="flex items-center text-sm"
+                >
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                  Buenos Aires 2590, Boulogne, Buenos Aires.
+                </a>
+              </p>
+            </div>
+
+            <div class="mb-4 sm:mb-0">
+              <p class="text-white text-sm mb-2 font-semibold">Sucursales:</p>
+              <p>
+                <a
+                  class="flex items-center text-sm"
+                  href="https://www.google.com/maps/place/Pelba+(Sucursal+Don+Torcuato)/@-34.4835895,-58.6111108,15z/data=!4m5!3m4!1s0x0:0x5404a2d1f7b4ac47!8m2!3d-34.4835895!4d-58.6111108"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                  Av. Alvear 3399 (R202), Don Torcuato, Buenos Aires.
+                </a>
+              </p>
+              <p>
+                <a
+                  class="flex items-center text-sm"
+                  href="https://www.google.com/maps/place/PELBA+(Sucursal+Pilar)/@-34.451315,-58.9255837,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc9ce3800e059b:0x4c2ece2e8140c105!8m2!3d-34.451315!4d-58.923395"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                  Panamericana km 55, Pilar, Buenos Aires.
+                </a>
+              </p>
+            </div>
+            <div>
+              <p class="text-white text-sm font-semibold mb-2">
+                Oficina Comercial Mendoza:
+              </p>
+              <p>
+                <a
+                  class="flex items-center text-sm"
+                  href="https://goo.gl/maps/JERfML54SPmu6LBK9"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                  Bufano 489, Luján de cuyo, Mendoza.
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <ul id="footer-social" class="flex justify-center my-12">
+      <ul id="footer-social" class="flex justify-center pt-12 pb-6">
         <li>
           <a
             class=""
@@ -184,7 +285,7 @@
       </ul>
 
       <hr id="footer-divider" />
-      <div class="flex justify-center mt-5 text-sm">PELBA | Copyright 2020</div>
+      <div class="text-center py-6 text-sm">PELBA | Copyright 2021</div>
     </div>
 
     <a
@@ -236,26 +337,11 @@ footer .btn-footer {
 
 #footer-divider {
   border-color: rgba(255, 255, 255, 0.2);
-  margin: 30px 0 40px;
 }
 
 footer .title {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-footer #form label {
-  color: #999;
-  display: block;
-  margin: 20px 0 0 0;
-}
-
-footer #form input {
-  color: #3c4858;
-  font-size: 1rem;
-  outline: none;
-  padding: 7px;
-  width: 100%;
 }
 
 #footer-social a {
@@ -276,19 +362,6 @@ footer #form input {
 
 #footer-social a i {
   font-size: 32px;
-}
-
-#footer-info p {
-  font-size: 0.9rem;
-  margin: 0 0 10px;
-}
-
-#footer-bottom li {
-  font-size: 0.78rem;
-  font-weight: 500;
-  opacity: 0.86;
-  padding: 15px;
-  text-transform: uppercase;
 }
 
 #btn-ws {

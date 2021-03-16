@@ -1,8 +1,3 @@
-#menu-container {
-  box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.42),
-    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px -2px rgba(0, 0, 0, 0.1);
-}
-
 .nav-menu {
   z-index: 1000;
 }
@@ -63,11 +58,7 @@
 
 /* root */
 .nav-menu a {
-  font-size: 12px;
-  font-weight: normal;
-  padding: 15px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
+  @apply text-xs px-2 tracking-wide uppercase;
 }
 
 .nav-menu a:hover {
@@ -89,6 +80,18 @@
 
 .nav-menu .dropdown-toggle {
   padding: 15px 25px 15px 15px;
+}
+
+@screen sm {
+  .nav-menu a {
+    @apply px-2;
+  }
+}
+
+@screen lg {
+  .nav-menu a {
+    @apply px-4;
+  }
 }
 
 @media screen and (max-width: 750px) {
