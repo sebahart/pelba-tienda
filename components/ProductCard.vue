@@ -11,7 +11,7 @@
 
       <div class="px-2 sm:px-4 py-2 sm:py-4">
         <h3
-          class="font-normal text-center sm:text-bold text-xs sm:text-sm uppercase"
+          class="font-normal text-center sm:text-bold text-xs sm:text-sm uppercase tracking-widest"
           v-html="product.name"
         ></h3>
         <div class="footer text-center">
@@ -54,7 +54,7 @@ export default {
 }
 
 #content-products .card:hover .content-image {
-  transform: translate(0, 0.4rem);
+  transform: translate(0, 0.5rem);
   @apply shadow-lg;
 }
 
@@ -80,6 +80,9 @@ export default {
 }
 @screen md {
   .description {
+    @apply text-base;
+  }
+  .price {
     @apply text-base;
   }
 }

@@ -25,42 +25,44 @@
         </div>
         <div class="flex flex-col pl-6">
           <!-- Menu -->
-          <div id="menu-container" class="w-full py-2">
+          <div id="menu-container" class="w-full sm:py-2">
             <nav
               class="xl:container mx-auto flex py-2 md:placeholder-gray-100 items-center justify-between"
             >
               <ul
-                class="nav-menu bg-white flex justify-end flex-wrap items-center"
+                class="nav-menu bg-white flex justify-center flex-wrap items-center"
               >
                 <li>
                   <a href="/" title="Inicio">Inicio</a>
                 </li>
                 <li>
                   <a
-                    href="https://www.pelba.com.ar/como-comprar/"
-                    title="COMO COMPRAR"
+                    href="https://www.pelba.com.ar/pedido-de-presupuesto/"
+                    title="Solicitar presupuesto"
                   >
                     Solicitar presupuesto
                   </a>
                 </li>
+
                 <li>
                   <a
                     href="https://www.pelba.com.ar/como-comprar/"
-                    title="COMO COMPRAR"
+                    title="Como comprar"
                   >
-                    COMO COMPRAR
+                    Cómo comprar
                   </a>
                 </li>
+
                 <li>
                   <a
-                    href="https://www.pelba.com.ar/como-comprar/"
-                    title="COMO COMPRAR"
+                    href="https://www.pelba.com.ar/mi-cuenta/"
+                    title="Mi cuenta"
                   >
                     MI CUENTA
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.pelba.com.ar/" title="Empresa">
+                  <a href="https://www.pelba.com.ar/empresa/" title="Empresa">
                     Empresa
                   </a>
                 </li>
@@ -82,18 +84,32 @@
             </nav>
           </div>
 
-          <div class="py-1 flex lg:pr-20">
+          <div class="py-3 flex lg:pr-20 xl:container">
             <button
               @click="productosMenu = !productosMenu"
-              class="btn-primary text-xs mr-4"
+              class="btn-primary text-left text-xs mr-4 hidden sm:flex items-center"
             >
-              Productos
+              <span>Productos por categoría</span>
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
             </button>
-            <Buscar class="hidden sm:flex" />
+            <Buscar class="hidden sm:flex xl:ml-6" />
 
             <div
               class="menu-toggle mr-2 cursor-pointer md:hidden"
-              @click="menuMobile = !menuMobile"
+              @click="openMenu"
             >
               <svg
                 v-if="!menuMobile"
@@ -133,25 +149,32 @@
 
     <!-- MENU -->
     <div v-if="menuMobile" style="background-color: #333">
-      <ul class="text-white text-center p-2 uppercase font-light text-sm">
+      <ul
+        class="menu-mobile text-white text-center p-2 uppercase font-light text-sm"
+      >
         <li><a href="/" title="Inicio">Inicio</a></li>
         <li>
-          <a href="https://www.pelba.com.ar/como-comprar/" title="COMO COMPRAR">
+          <a
+            href="https://www.pelba.com.ar/pedido-de-presupuesto/"
+            title="Presupuesto"
+          >
             Solicitar presupuesto
           </a>
         </li>
         <li>
-          <a href="https://www.pelba.com.ar/como-comprar/" title="COMO COMPRAR">
+          <a href="https://www.pelba.com.ar/como-comprar/" title="Como comprar">
             COMO COMPRAR
           </a>
         </li>
         <li>
-          <a href="https://www.pelba.com.ar/como-comprar/" title="COMO COMPRAR">
+          <a href="https://www.pelba.com.ar/mi-cuenta/" title="Mi cuenta">
             MI CUENTA
           </a>
         </li>
         <li>
-          <a href="https://www.pelba.com.ar/" title="Empresa"> Empresa </a>
+          <a href="https://www.pelba.com.ar/empresa" title="Empresa">
+            Empresa
+          </a>
         </li>
       </ul>
     </div>
@@ -308,6 +331,12 @@ export default {
       productosMenu: false,
     }
   },
+  methods: {
+    openMenu() {
+      this.menuMobile = !this.menuMobile
+      this.productosMenu = this.menuMobile
+    },
+  },
 }
 </script>
 
@@ -315,7 +344,7 @@ export default {
 @import '~/assets/css/menu.css';
 
 .logo img {
-  max-width: 64px;
+  max-width: 128px;
 }
 #top-bar {
   background-color: #003168;
@@ -353,5 +382,15 @@ header {
   .logo img {
     max-width: 164px;
   }
+}
+
+@screen lg {
+  .logo img {
+    max-width: 200px;
+  }
+}
+
+.menu-mobile li {
+  @apply py-2;
 }
 </style>

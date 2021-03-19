@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'PELBA',
+    title: 'PELBA | MATERIALES ELECTRICOS | ILUMINACIÓN',
     htmlAttrs: {
       lang: 'en',
     },

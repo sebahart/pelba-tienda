@@ -59,16 +59,16 @@
         class="container mx-auto content-text text-center text-white"
       >
         <h2 class="text-center text-xl sm:text-2xl md:text-3xl font-bold">
-          Pedi tu presupuesto
+          ¿Tenés dudas sobre los productos?
         </h2>
         <p class="text-xs sm:text-sm font-light">
-          Completá el formulario y un asesor comercial te cotizará tu pedido.
+          Completá el formulario y un asesor comercial cotizará tu pedido
         </p>
         <a href="https://www.pelba.com.ar/pedido-de-presupuesto/">
           <button
             class="mt-6 bg-white rounded-md shadow-md p-2 sm:px-6 text-gray-900 uppercase text-sm hover:bg-gray-700 hover:text-white"
           >
-            Completar formulario
+            Solicitar Cotización
           </button>
         </a>
       </article>
