@@ -225,7 +225,7 @@ export default {
     },
     fetchProducts() {
       var url =
-        '/wp-json/wc/v3/products?featured=true&per_page=12&consumer_key=' +
+        '/wp-json/wc/v3/products?featured=true&stock_status=instock&per_page=12&consumer_key=' +
         consumer_key +
         '&consumer_secret=' +
         consumer_secret
@@ -240,7 +240,7 @@ export default {
     },
     fetchHerramientas() {
       var url =
-        '/wp-json/wc/v3/products?category=1148&per_page=12&consumer_key=' +
+        '/wp-json/wc/v3/products?category=1148&stock_status=instock&per_page=12&consumer_key=' +
         consumer_key +
         '&consumer_secret=' +
         consumer_secret
@@ -255,7 +255,7 @@ export default {
     },
     fetchIluminacion() {
       var url =
-        '/wp-json/wc/v3/products?featured=true&category=415&per_page=12&consumer_key=' +
+        '/wp-json/wc/v3/products?featured=true&category=415&stock_status=instock&per_page=12&consumer_key=' +
         consumer_key +
         '&consumer_secret=' +
         consumer_secret
