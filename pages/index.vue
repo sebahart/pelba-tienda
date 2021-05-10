@@ -2,18 +2,24 @@
   <div>
     <Header />
 
-    <div class="">
+    <div class="banner">
       <!-- BANNER -->
       <carousel
         autoplay
         :per-page="1"
-        :navigation-enabled="false"
+        :navigation-enabled="true"
         :pagination-enabled="false"
+        :navigation-prev-label="'<'"
+        :navigation-next-label="'>'"
         loop
       >
         <slide v-for="(s, i) in banners" :key="i">
           <a :href="s.link" target="_BLANK">
-            <img :src="s.src" alt="PELBA" class="w-full" />
+            <img
+              :src="!$breakpoints.sSm ? s.src : s.src_mobile"
+              alt="PELBA"
+              class="w-full"
+            />
           </a>
         </slide>
       </carousel>
@@ -27,7 +33,7 @@
           <carousel
             autoplay
             loop
-            :navigation-enabled="false"
+            :navigation-enabled="true"
             :pagination-enabled="false"
             :perPage="2"
             :perPageCustom="[
@@ -63,7 +69,7 @@
           <carousel
             autoplay
             loop
-            :navigation-enabled="false"
+            :navigation-enabled="true"
             :pagination-enabled="false"
             :perPage="2"
             :perPageCustom="[
@@ -91,12 +97,12 @@
     <!-- Productos Herramientas -->
     <div v-if="load" class="">
       <article id="content-products" class="container py-6 sm:py-12">
-        <h2 class="title">Accesorios y Herramientas</h2>
+        <h2 class="title">Instalaciones Domiciliarias</h2>
         <div v-if="load && products.herramientas.length > 0">
           <carousel
             autoplay
             loop
-            :navigation-enabled="false"
+            :navigation-enabled="true"
             :pagination-enabled="false"
             :perPage="2"
             :perPageCustom="[
@@ -152,17 +158,28 @@ export default {
     return {
       banners: [
         {
-          src:
-            'https://www.pelba.com.ar/wp-content/uploads/2021/02/banner-apertura-sucursal.jpg',
+          src: '/img/banners/web0.jpg',
+          src_mobile: '/img/banners/cel0.jpg',
           link: 'https://pelba.com.ar',
         },
         {
-          src:
-            'https://www.pelba.com.ar/wp-content/uploads/2021/02/banner-apertura-sucursal-021.jpg',
+          src: '/img/banners/web1.jpg',
+          src_mobile: '/img/banners/cel1.jpg',
           link: 'https://pelba.com.ar',
         },
         {
-          src: 'https://www.pelba.com.ar/wp-content/uploads/2020/09/31.jpg',
+          src: '/img/banners/web2.jpg',
+          src_mobile: '/img/banners/cel2.jpg',
+          link: 'https://pelba.com.ar',
+        },
+        {
+          src: '/img/banners/web3.jpg',
+          src_mobile: '/img/banners/cel3.jpg',
+          link: 'https://pelba.com.ar',
+        },
+        {
+          src: '/img/banners/web4.jpg',
+          src_mobile: '/img/banners/cel4.jpg',
           link: 'https://pelba.com.ar',
         },
       ],
@@ -275,6 +292,24 @@ export default {
 <style>
 .title {
   @apply text-xl font-bold mb-12 text-center;
+}
+.banner .VueCarousel-navigation-prev {
+  left: 4rem;
+  color: white;
+  font-size: 2rem;
+  @apply hidden;
+}
+.banner .VueCarousel-navigation-next {
+  right: 4rem;
+  color: white;
+  font-size: 2rem;
+  @apply hidden;
+}
+@screen sm {
+  .banner .VueCarousel-navigation-prev,
+  .banner .VueCarousel-navigation-next {
+    @apply block;
+  }
 }
 @screen md {
   .title {

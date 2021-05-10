@@ -3,7 +3,11 @@
     <div id="top-bar" class="flex items-end py-1 sm:px-6">
       <div class="container flex justify-end pb-1">
         <a href="https://fegime.com.ar/index.php/es/">
-          <img alt="img fegime" src="~/static/img/fegime.png" class="sm:mr-2" />
+          <img
+            alt="fegime"
+            src="~/static/img/fegime.png"
+            class="sm:mr-2 fegime"
+          />
         </a>
       </div>
     </div>
@@ -210,7 +214,7 @@
                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                 ></path>
               </svg>
-              <h6>Accesorios y Herramientas</h6>
+              <h6>Instalaciones Domiciliarias</h6>
             </a>
           </div>
           <div class="category">
@@ -369,12 +373,19 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.fegime {
+  max-width: 64px;
+}
+
 @screen sm {
   .nav-productos h6 {
     @apply text-sm;
   }
   .logo img {
     max-width: 128px;
+  }
+  .fegime {
+    max-width: 80px;
   }
 }
 
@@ -387,6 +398,15 @@ header {
 @screen lg {
   .logo img {
     max-width: 200px;
+  }
+}
+
+@screen xl {
+  .logo img {
+    max-width: 232px;
+  }
+  .fegime {
+    max-width: 100px;
   }
 }
 

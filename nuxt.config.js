@@ -35,8 +35,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-breakpoints',
+    'nuxt-facebook-pixel-module',
   ],
-
+  facebook: {
+    /* module options */
+    track: 'PageView',
+    pixelId: '2484789401545530',
+    autoPageView: true,
+    disabled: false,
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: 'https://pelba.com.ar/index.php',

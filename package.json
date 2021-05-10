@@ -12,6 +12,8 @@
     "@nuxtjs/axios": "^5.12.5",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
+    "nuxt-breakpoints": "^1.1.9",
+    "nuxt-facebook-pixel-module": "^1.5.0",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
