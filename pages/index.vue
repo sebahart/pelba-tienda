@@ -163,6 +163,11 @@ export default {
           link: 'https://pelba.com.ar',
         },
         {
+          src: '/img/banners/web01.jpg',
+          src_mobile: '/img/banners/cel01.jpg',
+          link: 'https://pelba.com.ar',
+        },
+        {
           src: '/img/banners/web1.jpg',
           src_mobile: '/img/banners/cel1.jpg',
           link: 'https://pelba.com.ar',
